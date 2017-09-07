@@ -1,0 +1,53 @@
+#lily-map {
+	position: relative;
+}
+#map-wrap {
+	min-height: 300px;
+	padding-top: 40%;
+	@media screen and (min-height: 768px) {
+		padding-top: 25%;
+	}
+	@media screen and (min-height: 1080px) {
+		padding-top: 20%;
+	}
+}
+
+#map-zoom-in, #map-zoom-out {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	left: 50% !important;
+	z-index: 9999 !important;
+	@include size(32px);
+	@include transform(translateX(-50%));
+	cursor: pointer;
+	background-color: rgba($faceColor, 1);
+	// background-repeat: no-repeat;
+	// background-size: 32px 64px;
+	// background-image: url('../images/map-zoom-control.min.svg');
+
+	.no-touch &:hover {
+		background-color: rgba($faceColor, 1);
+	}
+}
+
+#map-zoom-out {
+	margin-left: -20px !important;
+	background-position: 50% -32px;
+}
+
+#map-zoom-in {
+	background-position: 50% 0;
+	margin-left: 20px;
+}
+
+// Remove Google Logo, terms of use, and report a problem div.
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+.gmnoprint a, .gmnoprint span, .gm-style-cc,
+.gm-fullscreen-control {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}

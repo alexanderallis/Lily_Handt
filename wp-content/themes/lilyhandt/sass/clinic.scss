@@ -1,0 +1,14 @@
+@import "theme/bits";
+@import "global/mixins";
+@import "bourbon/bourbon";
+
+// Vendor
+@import "vendor/slick/slick";
+
+// Theme
+@import "theme/clinic-page/slider";
+@import "theme/clinic-page/content-layout";
+@import "theme/clinic-page/before-after";
+@import "theme/clinic-page/testimonials";
+@import "theme/clinic-page/vip";
+@import "theme/lightbox";

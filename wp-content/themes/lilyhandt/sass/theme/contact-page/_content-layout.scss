@@ -1,0 +1,343 @@
+body {
+	background: white;
+}
+
+#lh-section-1 {
+	background: #EBEBEC;
+	padding: 0 0 !important;
+
+	.vc_column-inner .vc_column-inner {
+		padding: 0 !important;
+	}
+
+	.vc_separator .vc_sep_line {
+	    border-top: 2px solid #231f20;
+	}
+
+	.lily-contact-form {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: .65rem;
+		p {
+			@include reset();
+		}
+		br {
+			display: none;
+		}
+		@media screen and (max-width: 767px) {
+			max-width: 500px;
+			margin: auto;
+		}
+	}
+}
+
+#lh-section-3 {
+	padding: $sectionPadding 0 !important;
+	@media screen and (max-width: 767px) {
+		.vc_col-sm-4 {
+			max-width: 500px;
+			margin: auto;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.vc_separator .vc_sep_line {
+	    border-top: 2px solid #231f20;
+	}
+
+	.lily-contact-address,
+	.lily-open-days {
+		padding: 0;
+		margin: 20px 0 0;
+		white-space: nowrap;
+		p {
+			padding: 0;
+			margin: 0 0 20px;
+			font-size: 1rem;
+			line-height: 1.6rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		p br {
+			display: none;
+		}
+		span > span {
+			display: inline-block;
+			width: 80px;
+		}
+	}
+}
+
+.lily-form-group {
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&.flex-full-height {
+		height: 100%;
+	}
+	&.lily-form-submit {
+		margin-top: 20px;
+		text-align: right;
+	}
+}
+
+.lily-input-field {
+	padding: 0 20px;
+	line-height: 50px;
+	height: 50px;
+	display: block;
+	background: white;
+	border: 0;
+	border-radius: 0;
+	width: 100%;
+	outline: none;
+	resize: vertical;
+	&.wpcf7-not-valid {
+		border: 1px solid salmon;
+	}
+	+ span {
+		display: none;
+	}
+}
+
+span[role="alert"].wpcf7-not-valid-tip {
+	display: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: $faceColor;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: $faceColor;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: $faceColor;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: $faceColor;
+}
+
+textarea.lily-input-field {
+	height: 100%;
+}
+
+.lily-button {
+	border: 0;
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 0;
+	outline: none;
+	cursor: pointer;
+	font-size: .65rem;
+
+	&.lily-button-black {
+		background: $faceColor;
+		color: white;
+		letter-spacing: 1px;
+	}
+}
+
+// Subject - Dropdown
+.lily-drop-down {
+	display: block;
+	width: 100%;
+	list-style: none;
+	@include reset();
+	@include noSelect();
+
+	ul {
+		@include reset();
+		list-style: none;
+		position: absolute;
+		width: 100%;
+		z-index: 200;
+		@include transition(.15s linear);
+		@include transform(translateY(20px));
+		visibility: hidden;
+		opacity: 0;
+		> li {
+			display: block;
+			width: 100%;
+			height: 50px;
+			background: white;
+			line-height: 50px;
+			padding: 0 20px;
+			cursor: pointer;
+		}
+	}
+
+	> li {
+		position: relative;
+		overflow: hidden;
+		span {
+			display: block;
+			width: 100%;
+			height: 50px;
+			background: white;
+			line-height: 50px;
+			padding: 0 20px;
+			position: relative;
+			cursor: pointer;
+
+			&.wpcf7-not-valid {
+				border: 1px solid salmon;
+			}
+
+			&:after {
+				content: "\f107";
+				font-family: "FontAwesome";
+				position: absolute;
+				right: 20px;
+				@include transition(.2s linear);
+				@include transform(scale(2) rotate(0));
+			}
+		}
+	}
+
+	&.lily-drop-down-is-open {
+		ul {
+			@include transform(translateY(0));
+			visibility: visible;
+			opacity: 1;
+		}
+		> li {
+			overflow: visible;
+			&:first-child span:after {
+				@include transform(scale(2) rotate(-180deg));
+			}
+		}
+	}
+}
+
+// Contact form 7 Customization
+.ajax-loader {
+	display: none !important;
+	opacity: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+.lily-contact-form-message {
+	padding: 0;
+	margin: 0;
+	line-height: 50px;
+	@include transition(.15s linear);
+}
+
+#lily-contact-form-message {
+	> div {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+// Lily Spinner
+$spinnerSize: 30px;
+$spinnerStroke: 5px;
+.lily-spinner {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: $faceColor;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		@include size($spinnerSize);
+		background: transparent;
+		border-width: $spinnerStroke;
+		border-style: solid;
+		border-color: rgba(white, .8) rgba(white, .3) rgba(white, .3) rgba(white, .3);
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		margin-top: -$spinnerSize/2;
+		margin-left: -$spinnerSize/2;
+		display: none;
+	}
+	&.lily-spinner-start {
+		&:before {
+			display: block;
+		}
+		&:after {
+			@include animation(lilySpinner .7s linear infinite);
+			display: block;
+		}
+	}
+}
+
+@include keyframes(lilySpinner) {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+
+.lily-contact-social {
+	margin-top: 20px;
+}
+
+.lily-contact-form {
+	.fxg-1-11 {
+		width: 100%;
+		padding-bottom: 20px !important;
+	}
+	.fxg-1-1 {
+		width: 100px;
+		padding-bottom: 20px !important;
+	}
+
+	@media screen and (max-width: 767px) {
+		.fxg-1-4,
+		.fxg-1-8 {
+			width: 100%;
+		}
+
+		.fxg-1-11,
+		.fxg-1-1 {
+			width: 100%;
+		}
+
+		.fxg-pad {
+			@include flex-wrap(wrap);
+			text-align: center;
+		}
+
+		.lily-form-submit {
+			text-align: center;
+		}
+
+		.fxg-1-1 {
+			@include order(1);
+		}
+
+		.fxg-1-11 {
+			@include order(2);
+		}
+
+		.lily-contact-form-message {
+		    padding: 20px 0 0;
+		    margin: 0;
+		    line-height: 1.45;
+		}
+
+		.lily-form-group.flex-full-height {
+			padding-top: 15px;
+		}
+	}
+}

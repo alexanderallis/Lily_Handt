@@ -1,0 +1,35 @@
+# Files #
+######
+*.bat
+#*.gulpfile
+*.zip
+*.7zip
+*.rar
+
+# Folders #
+#########
+data
+node_modules
+
+# Image Files #
+############
+#*.svg
+#*.jpeg
+#*.jpg
+#*.gif
+#*.png
+#*.bmp
+#*.tiff
+
+# Theme Files #
+############
+inventory.txt
+readme.txt
+
+# WordPress Files & Folders #
+#############################
+*.log
+wp-config.php
+.htaccess
+*.ics
+#plugins

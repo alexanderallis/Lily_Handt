@@ -1,0 +1,108 @@
+$headerPadding: 40px;
+
+.site-header {
+	position: relative;
+	z-index: 1;
+	padding: $headerPadding;
+	background: #EBEBEC;
+	z-index: 5000;
+
+	@media screen and (max-width: 1170px) {
+		padding: 15px;
+	}
+}
+
+.site-logo {
+	display: block;
+	@include reset();
+	line-height: 0;
+	padding-right: 20px;
+	> a {
+		display: inline-block;
+		width: 100%;
+		max-width: 300px;
+	}
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+// Menu
+.main-navigation .menu-toggle {
+	display: none;
+}
+
+#primary-menu {
+	font-family: 'Century Gothic';
+	padding: 0;
+	margin: 20px 0 0 -10px;
+	li {
+		display: block;
+		max-width: 150px;
+		position: relative;
+		a {
+			color: $faceColor;
+			font-size: 10px;
+			display: block;
+			width: 100%;
+			padding: 7px 10px;
+			text-decoration: none;
+			@include transition(.15s linear);
+			
+			&:hover,
+			&:active,
+			&:focus {
+				background: white;
+			}
+		}
+		.sub-menu {
+			@include reset();
+			list-style: none;
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			visibility: hidden;
+			opacity: 0;
+			@include transform(translateY(20px));
+			@include transition(.15s linear);
+			
+			li {
+				background: white;
+			}
+		}
+		&:hover {
+			.sub-menu {
+				visibility: visible;
+				opacity: 1;
+				@include transform(translateY(0));
+			}
+		}
+	}
+}
+
+.site-header {
+	@include display(flex);
+	@include flex-wrap(nowrap);
+}
+
+.top-header {
+	width: 100%;
+}
+
+.right-header {
+	width: 100px;
+	@media screen and (max-width: 460px) {
+		width: 50px;
+	}
+}
+
+.top-header {
+	position: relative;
+	z-index: 100;
+}
+
+.right-logo {
+	z-index: 10;
+	width: 100px;
+}

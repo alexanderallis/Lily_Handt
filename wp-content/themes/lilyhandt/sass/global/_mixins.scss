@@ -1,0 +1,70 @@
+@mixin vcenter() {
+	position: absolute;
+	top: 50%;	
+	@include transform(translateY(-50%));
+}
+
+@mixin hcenter() {
+	position: absolute;
+	left: 50%;
+	@include tranform(translateX(-50%));
+}
+
+@mixin hvcenter() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include transform(translate(-50%, -50%))
+}
+
+@mixin transform($value) {
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	transform: $value;
+}
+
+@mixin transition($value) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}
+
+@mixin screenreader() {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	z-index: -9999;
+}
+
+@mixin reset() {
+	padding: 0;
+	margin: 0;
+}
+
+@mixin noSelect() {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+@mixin screenreader() {
+	clip-path: inset(100%);
+	clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; /* added line */
+	width: 1px;
+}

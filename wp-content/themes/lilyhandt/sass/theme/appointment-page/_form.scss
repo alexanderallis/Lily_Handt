@@ -1,0 +1,495 @@
+@mixin angleArrow() {
+	position: absolute;
+	font-family: "FontAwesome";
+	color: $faceColor;
+	text-align: center;
+	font-size: 2rem;
+}
+
+body {
+	background: #EBEBEC;
+}
+
+#lh-section-1 {
+	padding: 0 0 $sectionPadding !important;
+}
+
+.appointment-booking-form {
+	padding: 15px 15px 0 15px;
+	@media screen and (max-width: 767px) {
+		// margin-top: 10px;
+	}
+	&:first-child {
+		padding-top: 0;
+	}
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+// BIRCHPRESS CUSTOMIZATION
+#birs_booking_box {
+	border-top: 2px solid $faceColor;
+}
+
+#birs_appointment_form {
+	max-width: 66.6667%;
+	@media screen and (max-width: 991px) {
+		max-width: 767px;
+	}
+}
+
+#birs_appointment_form .birs_form_field {
+	padding: 0 !important;
+	margin-bottom: 15px !important;
+	> label {
+		@include screenreader();
+	}
+}
+
+#birs_appointment_form .birs_field_content, #birs_appointment_form .birs_form_field select {
+	max-width: 100% !important;
+}
+
+// Placeholder
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: $faceColor;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: $faceColor;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: $faceColor;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: $faceColor;
+}
+
+// Form Titles
+#birs_appointment_form {
+	h2.birs_section {
+		padding: 0 0 10px;
+		margin: 20px 0 0;
+		font-size: 1.15rem;
+		font-weight: 600;
+		letter-spacing: 0;
+		text-transform: lowercase;
+		border-bottom: 0;
+		@media screen and (max-width: 767px) {
+			margin-top: 10px;
+			padding-bottom: 0;
+		}
+	}
+}
+
+#birs_appointment_form div#birs_appointment_timeoptions {
+    border-width: 2px;
+    border-style: solid;
+    border-color: $faceColor;
+    padding: 20px 0;
+    margin: 30px 0;
+    min-height: 5em;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.birs_client_section h2.birs_section {
+	display: none;
+}
+
+// Time section
+#birs_appointment_timeoptions p {
+	padding: 0;
+	margin: 0;
+	line-height: 50px;
+}
+div#birs_appointment_timeoptions {
+	text-align: center !important;
+	> img {
+		position: relative;
+		top: 4px;
+		left: 10px;
+	}
+	span {
+		text-align: center;
+		margin: 2px 0;
+		padding: 0 !important;
+		a {
+			padding: 7px 5px !important;
+			text-align: center !important;
+			text-decoration: none;
+			color: $faceColor;
+			display: block;
+			height: 100%;
+			width: 110px !important;
+			&:hover,
+			&.selected {
+				background: white;
+				color: $faceColor;
+			}
+		}
+	}
+}
+
+// Error messages
+.birs_error,
+#birs_please_wait {
+	@include screenreader();
+}
+
+// Calendar
+#birs_appointment_form {
+	.ui-icon.ui-icon-circle-triangle-w,
+	.ui-icon.ui-icon-circle-triangle-e {
+		position: relative;
+		background-image: none !important;
+		background-position: 0 0;
+	}
+	.ui-datepicker-prev:after,
+	.ui-datepicker-next:after {
+		position: absolute;
+		top: 50%;
+		margin-top: -6px;
+		height: 100%;
+		width: 100%;
+		line-height: 28px;
+		@include angleArrow();
+	}
+	.ui-datepicker .ui-datepicker-next:hover,
+	.ui-datepicker .ui-datepicker-next:active,
+	.ui-datepicker .ui-datepicker-next:focus {
+		right: 2px;
+		top: 2px;
+	}
+	.ui-datepicker .ui-datepicker-prev:hover,
+	.ui-datepicker .ui-datepicker-prev:active,
+	.ui-datepicker .ui-datepicker-prev:focus {
+		left: 2px;
+		top: 2px;
+	}
+	.ui-datepicker-prev:after {
+		content: "\f104";
+	}
+	.ui-datepicker-next:after {
+		content: "\f105";
+	}
+	.birs_appointment_date {
+		background: white;
+		border: 0;
+	}
+	.ui-datepicker {
+		border: 0 !important;
+		border-radius: 0 !important;
+	}
+	.ui-datepicker-title {
+		line-height: 50px;
+	}
+	table.ui-datepicker-calendar {
+		thead {
+			span {
+				font-size: 1rem;
+				text-transform: uppercase;
+				line-height: 30px;
+			}
+		}
+		tbody {
+			td {
+				font-size: 1rem;
+				text-align: center !important;
+				padding: 0;
+				line-height: 35px;
+				&.ui-state-disabled {
+					color: rgba($faceColor, .5);
+					cursor: not-allowed !important;
+				}
+				a.ui-state-highlight,
+				a.ui-state-default {
+					// font-weight: 600 !important;
+					color: $faceColor;
+				}
+				> a,
+				> span {
+					&.ui-state-active {
+						background: $faceColor !important;
+						color: white;
+					}
+					width: 45px !important;
+					margin: auto !important;
+					display: inline-block !important;
+				}
+			}
+		}
+	}
+}
+
+// Dropdown
+.birs_form_field select,
+.birs_field_content input[type="text"],
+.birs_field_content textarea {
+	line-height: 50px;
+	height: 50px;
+	padding: 0 20px !important;
+	outline: none;
+	border: 0;
+	position: relative;
+	resize: vertical;
+	font-size: .9rem !important;
+	background: white;
+	&:after {
+		content: "\f107";
+		font-family: "FontAwesome";
+		position: absolute;
+		right: 20px;
+		@include transition(.2s linear);
+		@include transform(scale(2) rotate(0));
+	}
+	> option {
+		padding: 10px 20px !important;
+		outline: 0 !important;
+		border: 0 !important;
+	}
+}
+
+// Down angle arrow on select list
+.birs_form_field select {
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.birs_appointment_location .birs_field_content,
+.birs_appointment_service .birs_field_content,
+.birs_appointment_staff .birs_field_content,
+.birs_client_title .birs_field_content {
+	position: relative;
+	&:after {
+		content: "\f107";
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 50px;
+		line-height: 50px;
+		@include angleArrow();
+	}
+}
+
+// Submit Button
+.birs_footer {
+	text-align: right;
+}
+
+#birs_book_appointment {
+	border: 0;
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 0;
+	outline: none;
+	cursor: pointer;
+	background: $faceColor;
+	color: white;
+	letter-spacing: 1px;
+}
+
+// Lily Spinner
+$spinnerSize: 30px;
+$spinnerStroke: 5px;
+.spinner-wrap {
+	display: inline-block;
+	position: relative;
+}
+.lily-spinner {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: $faceColor;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		@include size($spinnerSize);
+		background: transparent;
+		border-width: $spinnerStroke;
+		border-style: solid;
+		border-color: rgba(white, .8) rgba(white, .3) rgba(white, .3) rgba(white, .3);
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		margin-top: -$spinnerSize/2;
+		margin-left: -$spinnerSize/2;
+		display: none;
+	}
+	&.lily-spinner-start {
+		&:before {
+			display: block;
+		}
+		&:after {
+			@include animation(lilySpinner .7s linear infinite);
+			display: block;
+		}
+	}
+}
+
+@include keyframes(lilySpinner) {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+
+// Form error
+.birs_field_content {
+	&.birch-has-error {
+		border: 1px solid salmon;
+		&:empty {
+			display: none;
+		}
+	}
+}
+
+#birs_appointment_form .birs_appointment_time .birch-has-error {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+// PRE-SUBMIT PAGE DESIGN
+#birs_appointment_form.birs_appointment_form_success {
+	max-width: 80%;
+	@media screen and (max-width: 991px) {
+		max-width: 100%;
+	}
+}
+
+p.birs_section_end {
+	padding: 20px 0 0;
+	margin: 0;
+	font-size: 1rem;
+	border-top: 2px solid $faceColor;
+	@media screen and (max-width: 767px) {
+		padding-top: 10px;
+	}
+}
+
+#birs_booking_success {
+	.birs_booking_success_inner {
+
+	}
+	h2.birs_section {
+		margin-bottom: 40px;
+		padding-bottom: 5px;
+		@media screen and (max-width: 767px) {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+	}
+	.fxg-pad.fxg-parent {
+		margin-bottom: 30px;
+		.fxg-pad .fxg-1-5 {
+			max-width: 170px;
+		}
+		@media screen and (max-width: 991px) {
+			margin-bottom: 0;
+			.fxg-1-6 {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.fxg-pad .fxg-1-5 {
+				padding-right: 20px;
+			}
+			.fxg-pad .fxg-1-7 {
+				width: 100%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		
+	}
+	.white-box,
+	.plain-box {
+		max-width: 130px;
+		padding: 30px 5px;
+		text-align: center;
+		margin-bottom: 0;
+		font-size: .65rem;
+		position: relative;
+	}
+
+	.space-right {
+		height: 100%;
+	}
+
+	.white-box {
+		background: white;
+	}
+
+	.plain-box {
+		margin-right: 20px;
+		max-width: 100%;
+		text-align: left;
+		height: 100%;
+		> span {
+			position: absolute;
+			height: auto;
+			width: 100%;
+			text-align: left;
+			top: 50%;
+			left: 0;
+			@include transform(translateY(-50%));
+		}
+	}
+}
+
+// FLEX ORDERING
+#birs_appointment_form {
+	ul {
+		@include display(flex);
+		@include flex-wrap(wrap);
+		> li {
+			width: 100%;
+			&.birs_form_field:empty {
+				display: none;
+			}
+			&.birs_form_field.birs_appointment_time,
+			&.birs_form_field.birs_client_section,
+			&.birs_form_field.birs_appointment_date {
+				margin-bottom: 0 !important;
+			}
+			&.birs_form_field.birs_appointment_notes {
+				margin-bottom: 10px !important;
+			}
+			&.birs_form_field.birs_client_title {
+				padding-top: 15px !important;
+			}
+			#birs_appointment_timeoptions {
+				margin-bottom: 15px;
+			}
+
+			// ORDER
+			&.birs_appointment_section { @include order(1); }
+			&.birs_appointment_location { @include order(2); }
+			&.birs_appointment_staff { @include order(3); }
+			&.birs_appointment_service { @include order(4); }
+			&.birs_appointment_date { @include order(5); }
+			&.birs_appointment_time { @include order(6); }
+			&.birs_client_section { @include order(7); }
+			&.birs_client_type { @include order(8); }
+			&.birs_client_title { @include order(9); }
+			&.birs_client_name_first { @include order(10); }
+			&.birs_client_name_last { @include order(11); }
+			&.birs_appointment_notes { @include order(12); }
+			&.birs_client_email { @include order(13); }
+			&.birs_client_phone { @include order(14); }
+			&.birs_footer { @include order(15); }
+		}
+	}
+}

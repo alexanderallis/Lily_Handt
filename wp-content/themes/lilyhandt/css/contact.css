@@ -1,0 +1,388 @@
+body {
+  background: white; }
+
+#lh-section-1 {
+  background: #EBEBEC;
+  padding: 0 0 !important; }
+  #lh-section-1 .vc_column-inner .vc_column-inner {
+    padding: 0 !important; }
+  #lh-section-1 .vc_separator .vc_sep_line {
+    border-top: 2px solid #231f20; }
+  #lh-section-1 .lily-contact-form {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: .65rem; }
+    #lh-section-1 .lily-contact-form p {
+      padding: 0;
+      margin: 0; }
+    #lh-section-1 .lily-contact-form br {
+      display: none; }
+    @media screen and (max-width: 767px) {
+      #lh-section-1 .lily-contact-form {
+        max-width: 500px;
+        margin: auto; } }
+
+#lh-section-3 {
+  padding: 35px 0 !important; }
+  @media screen and (max-width: 767px) {
+    #lh-section-3 .vc_col-sm-4 {
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 15px; }
+      #lh-section-3 .vc_col-sm-4:last-child {
+        margin-bottom: 0; } }
+  #lh-section-3 .vc_separator .vc_sep_line {
+    border-top: 2px solid #231f20; }
+  #lh-section-3 .lily-contact-address,
+  #lh-section-3 .lily-open-days {
+    padding: 0;
+    margin: 20px 0 0;
+    white-space: nowrap; }
+    #lh-section-3 .lily-contact-address p,
+    #lh-section-3 .lily-open-days p {
+      padding: 0;
+      margin: 0 0 20px;
+      font-size: 1rem;
+      line-height: 1.6rem; }
+      #lh-section-3 .lily-contact-address p:last-child,
+      #lh-section-3 .lily-open-days p:last-child {
+        margin-bottom: 0; }
+    #lh-section-3 .lily-contact-address p br,
+    #lh-section-3 .lily-open-days p br {
+      display: none; }
+    #lh-section-3 .lily-contact-address span > span,
+    #lh-section-3 .lily-open-days span > span {
+      display: inline-block;
+      width: 80px; }
+
+.lily-form-group {
+  margin-bottom: 20px; }
+  .lily-form-group:last-child {
+    margin-bottom: 0; }
+  .lily-form-group.flex-full-height {
+    height: 100%; }
+  .lily-form-group.lily-form-submit {
+    margin-top: 20px;
+    text-align: right; }
+
+.lily-input-field {
+  padding: 0 20px;
+  line-height: 50px;
+  height: 50px;
+  display: block;
+  background: white;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  outline: none;
+  resize: vertical; }
+  .lily-input-field.wpcf7-not-valid {
+    border: 1px solid salmon; }
+  .lily-input-field + span {
+    display: none; }
+
+span[role="alert"].wpcf7-not-valid-tip {
+  display: none; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #231f20; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #231f20; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #231f20; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #231f20; }
+
+textarea.lily-input-field {
+  height: 100%; }
+
+.lily-button {
+  border: 0;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: .65rem; }
+  .lily-button.lily-button-black {
+    background: #231f20;
+    color: white;
+    letter-spacing: 1px; }
+
+.lily-drop-down {
+  display: block;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */ }
+  .lily-drop-down ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+    -webkit-transition: 0.15s linear;
+    -moz-transition: 0.15s linear;
+    transition: 0.15s linear;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    visibility: hidden;
+    opacity: 0; }
+    .lily-drop-down ul > li {
+      display: block;
+      width: 100%;
+      height: 50px;
+      background: white;
+      line-height: 50px;
+      padding: 0 20px;
+      cursor: pointer; }
+  .lily-drop-down > li {
+    position: relative;
+    overflow: hidden; }
+    .lily-drop-down > li span {
+      display: block;
+      width: 100%;
+      height: 50px;
+      background: white;
+      line-height: 50px;
+      padding: 0 20px;
+      position: relative;
+      cursor: pointer; }
+      .lily-drop-down > li span.wpcf7-not-valid {
+        border: 1px solid salmon; }
+      .lily-drop-down > li span:after {
+        content: "\f107";
+        font-family: "FontAwesome";
+        position: absolute;
+        right: 20px;
+        -webkit-transition: 0.2s linear;
+        -moz-transition: 0.2s linear;
+        transition: 0.2s linear;
+        -webkit-transform: scale(2) rotate(0);
+        -moz-transform: scale(2) rotate(0);
+        -ms-transform: scale(2) rotate(0);
+        -o-transform: scale(2) rotate(0);
+        transform: scale(2) rotate(0); }
+  .lily-drop-down.lily-drop-down-is-open ul {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1; }
+  .lily-drop-down.lily-drop-down-is-open > li {
+    overflow: visible; }
+    .lily-drop-down.lily-drop-down-is-open > li:first-child span:after {
+      -webkit-transform: scale(2) rotate(-180deg);
+      -moz-transform: scale(2) rotate(-180deg);
+      -ms-transform: scale(2) rotate(-180deg);
+      -o-transform: scale(2) rotate(-180deg);
+      transform: scale(2) rotate(-180deg); }
+
+.ajax-loader {
+  display: none !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important; }
+
+.lily-contact-form-message {
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  -webkit-transition: 0.15s linear;
+  -moz-transition: 0.15s linear;
+  transition: 0.15s linear; }
+
+#lily-contact-form-message > div {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.lily-spinner {
+  position: relative; }
+  .lily-spinner:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #231f20;
+    top: 0;
+    left: 0;
+    display: none; }
+  .lily-spinner:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    display: none; }
+  .lily-spinner.lily-spinner-start:before {
+    display: block; }
+  .lily-spinner.lily-spinner-start:after {
+    -webkit-animation: lilySpinner 0.7s linear infinite;
+    -moz-animation: lilySpinner 0.7s linear infinite;
+    animation: lilySpinner 0.7s linear infinite;
+    display: block; }
+
+@-webkit-keyframes lilySpinner {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes lilySpinner {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@keyframes lilySpinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.lily-contact-social {
+  margin-top: 20px; }
+
+.lily-contact-form .fxg-1-11 {
+  width: 100%;
+  padding-bottom: 20px !important; }
+
+.lily-contact-form .fxg-1-1 {
+  width: 100px;
+  padding-bottom: 20px !important; }
+
+@media screen and (max-width: 767px) {
+  .lily-contact-form .fxg-1-4,
+  .lily-contact-form .fxg-1-8 {
+    width: 100%; }
+  .lily-contact-form .fxg-1-11,
+  .lily-contact-form .fxg-1-1 {
+    width: 100%; }
+  .lily-contact-form .fxg-pad {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center; }
+  .lily-contact-form .lily-form-submit {
+    text-align: center; }
+  .lily-contact-form .fxg-1-1 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    order: 1;
+    -ms-flex-order: 1; }
+  .lily-contact-form .fxg-1-11 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    -webkit-order: 2;
+    -moz-order: 2;
+    order: 2;
+    -ms-flex-order: 2; }
+  .lily-contact-form .lily-contact-form-message {
+    padding: 20px 0 0;
+    margin: 0;
+    line-height: 1.45; }
+  .lily-contact-form .lily-form-group.flex-full-height {
+    padding-top: 15px; } }
+
+#lily-map {
+  position: relative; }
+
+#map-wrap {
+  min-height: 300px;
+  padding-top: 40%; }
+  @media screen and (min-height: 768px) {
+    #map-wrap {
+      padding-top: 25%; } }
+  @media screen and (min-height: 1080px) {
+    #map-wrap {
+      padding-top: 20%; } }
+
+#map-zoom-in, #map-zoom-out {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50% !important;
+  z-index: 9999 !important;
+  height: 32px;
+  width: 32px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  cursor: pointer;
+  background-color: #231f20; }
+  .no-touch #map-zoom-in:hover, .no-touch #map-zoom-out:hover {
+    background-color: #231f20; }
+
+#map-zoom-out {
+  margin-left: -20px !important;
+  background-position: 50% -32px; }
+
+#map-zoom-in {
+  background-position: 50% 0;
+  margin-left: 20px; }
+
+a[href^="http://maps.google.com/maps"] {
+  display: none !important; }
+
+a[href^="https://maps.google.com/maps"] {
+  display: none !important; }
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc,
+.gm-fullscreen-control {
+  display: none; }
+
+.gmnoprint div {
+  background: none !important; }

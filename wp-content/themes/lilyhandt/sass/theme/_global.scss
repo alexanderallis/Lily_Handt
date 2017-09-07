@@ -1,0 +1,48 @@
+[id*='lh-section-']:last-child {
+	padding-bottom: 0 !important;
+}
+
+a {
+	outline: none;
+}
+
+.lily-lb {
+	display: block;
+}
+
+.error-page {
+	max-width: 768px;
+	padding: 0 15px;
+	@media screen and (max-width: 767px) {
+		padding: $sectionPadding/2 15px;
+	}
+	margin: auto;
+
+	h2 {
+		padding: 0 0 20px;
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	p {
+		padding: 0 0 15px;
+		margin: 0;
+		font-size: 1.1rem;
+	}
+
+	a {
+		color: $faceColor;
+		text-decoration: none;
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+body.error404 {
+	background: #EBEBEC;
+}
+
+.lily-screen-reader {
+	@include screenreader();
+}

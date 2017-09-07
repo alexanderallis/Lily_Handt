@@ -1,0 +1,621 @@
+body {
+  background: #EBEBEC; }
+
+#lh-section-1 {
+  padding: 35px 0 !important; }
+
+.lily-resource-item {
+  padding: 15px 15px 0 15px; }
+  .lily-resource-item:first-child {
+    padding-top: 0; }
+  .lily-resource-item:last-child {
+    padding-bottom: 0; }
+
+.blog-module {
+  padding-left: 0;
+  margin-bottom: 20px;
+  border-top: 2px solid #231f20; }
+  .blog-module:last-child {
+    margin-bottom: 0; }
+  .blog-module [class*='fxg-1-']:last-child {
+    padding-right: 0; }
+
+.blog-module-title,
+.blog-module-time {
+  padding: 0;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: .5px; }
+
+.blog-module-time {
+  font-weight: 400; }
+
+.blog-module-right {
+  font-size: .95rem; }
+  .blog-module-right p {
+    padding: 0 0 15px;
+    margin: 0; }
+    .blog-module-right p:last-of-type {
+      padding-bottom: 0; }
+
+@media screen and (max-width: 991px) {
+  .lily-resource-item .fxg-1-4 {
+    width: 30%; }
+  .lily-resource-item .fxg-1-8 {
+    width: 70%; } }
+
+@media screen and (max-width: 767px) {
+  .lily-resource-item .fxg-1-4,
+  .lily-resource-item .fxg-1-8 {
+    width: 100%; }
+  .blog-module-right {
+    margin-top: 20px; }
+  #lh-section-1 {
+    padding-top: 0 !important; } }
+
+body {
+  background: #EBEBEC; }
+
+#lh-section-1 {
+  padding: 0 0 35px !important; }
+
+.appointment-booking-form {
+  padding: 15px 15px 0 15px; }
+  .appointment-booking-form:first-child {
+    padding-top: 0; }
+  .appointment-booking-form:last-child {
+    padding-bottom: 0; }
+
+#birs_booking_box {
+  border-top: 2px solid #231f20; }
+
+#birs_appointment_form {
+  max-width: 66.6667%; }
+  @media screen and (max-width: 991px) {
+    #birs_appointment_form {
+      max-width: 767px; } }
+
+#birs_appointment_form .birs_form_field {
+  padding: 0 !important;
+  margin-bottom: 15px !important; }
+  #birs_appointment_form .birs_form_field > label {
+    clip-path: inset(100%);
+    clip: rect(1px 1px 1px 1px);
+    /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    /* added line */
+    width: 1px; }
+
+#birs_appointment_form .birs_field_content, #birs_appointment_form .birs_form_field select {
+  max-width: 100% !important; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #231f20; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #231f20; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #231f20; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #231f20; }
+
+#birs_appointment_form h2.birs_section {
+  padding: 0 0 10px;
+  margin: 20px 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: lowercase;
+  border-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    #birs_appointment_form h2.birs_section {
+      margin-top: 10px;
+      padding-bottom: 0; } }
+
+#birs_appointment_form div#birs_appointment_timeoptions {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #231f20;
+  padding: 20px 0;
+  margin: 30px 0;
+  min-height: 5em;
+  border-left-width: 0;
+  border-right-width: 0; }
+
+.birs_client_section h2.birs_section {
+  display: none; }
+
+#birs_appointment_timeoptions p {
+  padding: 0;
+  margin: 0;
+  line-height: 50px; }
+
+div#birs_appointment_timeoptions {
+  text-align: center !important; }
+  div#birs_appointment_timeoptions > img {
+    position: relative;
+    top: 4px;
+    left: 10px; }
+  div#birs_appointment_timeoptions span {
+    text-align: center;
+    margin: 2px 0;
+    padding: 0 !important; }
+    div#birs_appointment_timeoptions span a {
+      padding: 7px 5px !important;
+      text-align: center !important;
+      text-decoration: none;
+      color: #231f20;
+      display: block;
+      height: 100%;
+      width: 110px !important; }
+      div#birs_appointment_timeoptions span a:hover, div#birs_appointment_timeoptions span a.selected {
+        background: white;
+        color: #231f20; }
+
+.birs_error,
+#birs_please_wait {
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px);
+  /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  /* added line */
+  width: 1px; }
+
+#birs_appointment_form .ui-icon.ui-icon-circle-triangle-w,
+#birs_appointment_form .ui-icon.ui-icon-circle-triangle-e {
+  position: relative;
+  background-image: none !important;
+  background-position: 0 0; }
+
+#birs_appointment_form .ui-datepicker-prev:after,
+#birs_appointment_form .ui-datepicker-next:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  height: 100%;
+  width: 100%;
+  line-height: 28px;
+  position: absolute;
+  font-family: "FontAwesome";
+  color: #231f20;
+  text-align: center;
+  font-size: 2rem; }
+
+#birs_appointment_form .ui-datepicker .ui-datepicker-next:hover,
+#birs_appointment_form .ui-datepicker .ui-datepicker-next:active,
+#birs_appointment_form .ui-datepicker .ui-datepicker-next:focus {
+  right: 2px;
+  top: 2px; }
+
+#birs_appointment_form .ui-datepicker .ui-datepicker-prev:hover,
+#birs_appointment_form .ui-datepicker .ui-datepicker-prev:active,
+#birs_appointment_form .ui-datepicker .ui-datepicker-prev:focus {
+  left: 2px;
+  top: 2px; }
+
+#birs_appointment_form .ui-datepicker-prev:after {
+  content: "\f104"; }
+
+#birs_appointment_form .ui-datepicker-next:after {
+  content: "\f105"; }
+
+#birs_appointment_form .birs_appointment_date {
+  background: white;
+  border: 0; }
+
+#birs_appointment_form .ui-datepicker {
+  border: 0 !important;
+  border-radius: 0 !important; }
+
+#birs_appointment_form .ui-datepicker-title {
+  line-height: 50px; }
+
+#birs_appointment_form table.ui-datepicker-calendar thead span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 30px; }
+
+#birs_appointment_form table.ui-datepicker-calendar tbody td {
+  font-size: 1rem;
+  text-align: center !important;
+  padding: 0;
+  line-height: 35px; }
+  #birs_appointment_form table.ui-datepicker-calendar tbody td.ui-state-disabled {
+    color: rgba(35, 31, 32, 0.5);
+    cursor: not-allowed !important; }
+  #birs_appointment_form table.ui-datepicker-calendar tbody td a.ui-state-highlight,
+  #birs_appointment_form table.ui-datepicker-calendar tbody td a.ui-state-default {
+    color: #231f20; }
+  #birs_appointment_form table.ui-datepicker-calendar tbody td > a,
+  #birs_appointment_form table.ui-datepicker-calendar tbody td > span {
+    width: 45px !important;
+    margin: auto !important;
+    display: inline-block !important; }
+    #birs_appointment_form table.ui-datepicker-calendar tbody td > a.ui-state-active,
+    #birs_appointment_form table.ui-datepicker-calendar tbody td > span.ui-state-active {
+      background: #231f20 !important;
+      color: white; }
+
+.birs_form_field select,
+.birs_field_content input[type="text"],
+.birs_field_content textarea {
+  line-height: 50px;
+  height: 50px;
+  padding: 0 20px !important;
+  outline: none;
+  border: 0;
+  position: relative;
+  resize: vertical;
+  font-size: .9rem !important;
+  background: white; }
+  .birs_form_field select:after,
+  .birs_field_content input[type="text"]:after,
+  .birs_field_content textarea:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 20px;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+    -webkit-transform: scale(2) rotate(0);
+    -moz-transform: scale(2) rotate(0);
+    -ms-transform: scale(2) rotate(0);
+    -o-transform: scale(2) rotate(0);
+    transform: scale(2) rotate(0); }
+  .birs_form_field select > option,
+  .birs_field_content input[type="text"] > option,
+  .birs_field_content textarea > option {
+    padding: 10px 20px !important;
+    outline: 0 !important;
+    border: 0 !important; }
+
+.birs_form_field select {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.birs_appointment_location .birs_field_content,
+.birs_appointment_service .birs_field_content,
+.birs_appointment_staff .birs_field_content,
+.birs_client_title .birs_field_content {
+  position: relative; }
+  .birs_appointment_location .birs_field_content:after,
+  .birs_appointment_service .birs_field_content:after,
+  .birs_appointment_staff .birs_field_content:after,
+  .birs_client_title .birs_field_content:after {
+    content: "\f107";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    font-family: "FontAwesome";
+    color: #231f20;
+    text-align: center;
+    font-size: 2rem; }
+
+.birs_footer {
+  text-align: right; }
+
+#birs_book_appointment {
+  border: 0;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  background: #231f20;
+  color: white;
+  letter-spacing: 1px; }
+
+.spinner-wrap {
+  display: inline-block;
+  position: relative; }
+
+.lily-spinner {
+  position: relative; }
+  .lily-spinner:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #231f20;
+    top: 0;
+    left: 0;
+    display: none; }
+  .lily-spinner:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    display: none; }
+  .lily-spinner.lily-spinner-start:before {
+    display: block; }
+  .lily-spinner.lily-spinner-start:after {
+    -webkit-animation: lilySpinner 0.7s linear infinite;
+    -moz-animation: lilySpinner 0.7s linear infinite;
+    animation: lilySpinner 0.7s linear infinite;
+    display: block; }
+
+@-webkit-keyframes lilySpinner {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes lilySpinner {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@keyframes lilySpinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.birs_field_content.birch-has-error {
+  border: 1px solid salmon; }
+  .birs_field_content.birch-has-error:empty {
+    display: none; }
+
+#birs_appointment_form .birs_appointment_time .birch-has-error {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+#birs_appointment_form.birs_appointment_form_success {
+  max-width: 80%; }
+  @media screen and (max-width: 991px) {
+    #birs_appointment_form.birs_appointment_form_success {
+      max-width: 100%; } }
+
+p.birs_section_end {
+  padding: 20px 0 0;
+  margin: 0;
+  font-size: 1rem;
+  border-top: 2px solid #231f20; }
+  @media screen and (max-width: 767px) {
+    p.birs_section_end {
+      padding-top: 10px; } }
+
+#birs_booking_success h2.birs_section {
+  margin-bottom: 40px;
+  padding-bottom: 5px; }
+  @media screen and (max-width: 767px) {
+    #birs_booking_success h2.birs_section {
+      margin-top: 10px;
+      margin-bottom: 20px; } }
+
+#birs_booking_success .fxg-pad.fxg-parent {
+  margin-bottom: 30px; }
+  #birs_booking_success .fxg-pad.fxg-parent .fxg-pad .fxg-1-5 {
+    max-width: 170px; }
+  @media screen and (max-width: 991px) {
+    #birs_booking_success .fxg-pad.fxg-parent {
+      margin-bottom: 0; }
+      #birs_booking_success .fxg-pad.fxg-parent .fxg-1-6 {
+        width: 100%;
+        margin-bottom: 20px; }
+      #birs_booking_success .fxg-pad.fxg-parent .fxg-pad .fxg-1-5 {
+        padding-right: 20px; }
+      #birs_booking_success .fxg-pad.fxg-parent .fxg-pad .fxg-1-7 {
+        width: 100%; } }
+
+#birs_booking_success .white-box,
+#birs_booking_success .plain-box {
+  max-width: 130px;
+  padding: 30px 5px;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: .65rem;
+  position: relative; }
+
+#birs_booking_success .space-right {
+  height: 100%; }
+
+#birs_booking_success .white-box {
+  background: white; }
+
+#birs_booking_success .plain-box {
+  margin-right: 20px;
+  max-width: 100%;
+  text-align: left;
+  height: 100%; }
+  #birs_booking_success .plain-box > span {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    text-align: left;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+#birs_appointment_form ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #birs_appointment_form ul > li {
+    width: 100%; }
+    #birs_appointment_form ul > li.birs_form_field:empty {
+      display: none; }
+    #birs_appointment_form ul > li.birs_form_field.birs_appointment_time, #birs_appointment_form ul > li.birs_form_field.birs_client_section, #birs_appointment_form ul > li.birs_form_field.birs_appointment_date {
+      margin-bottom: 0 !important; }
+    #birs_appointment_form ul > li.birs_form_field.birs_appointment_notes {
+      margin-bottom: 10px !important; }
+    #birs_appointment_form ul > li.birs_form_field.birs_client_title {
+      padding-top: 15px !important; }
+    #birs_appointment_form ul > li #birs_appointment_timeoptions {
+      margin-bottom: 15px; }
+    #birs_appointment_form ul > li.birs_appointment_section {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      box-ordinal-group: 1;
+      -webkit-order: 1;
+      -moz-order: 1;
+      order: 1;
+      -ms-flex-order: 1; }
+    #birs_appointment_form ul > li.birs_appointment_location {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      box-ordinal-group: 2;
+      -webkit-order: 2;
+      -moz-order: 2;
+      order: 2;
+      -ms-flex-order: 2; }
+    #birs_appointment_form ul > li.birs_appointment_staff {
+      -webkit-box-ordinal-group: 3;
+      -moz-box-ordinal-group: 3;
+      box-ordinal-group: 3;
+      -webkit-order: 3;
+      -moz-order: 3;
+      order: 3;
+      -ms-flex-order: 3; }
+    #birs_appointment_form ul > li.birs_appointment_service {
+      -webkit-box-ordinal-group: 4;
+      -moz-box-ordinal-group: 4;
+      box-ordinal-group: 4;
+      -webkit-order: 4;
+      -moz-order: 4;
+      order: 4;
+      -ms-flex-order: 4; }
+    #birs_appointment_form ul > li.birs_appointment_date {
+      -webkit-box-ordinal-group: 5;
+      -moz-box-ordinal-group: 5;
+      box-ordinal-group: 5;
+      -webkit-order: 5;
+      -moz-order: 5;
+      order: 5;
+      -ms-flex-order: 5; }
+    #birs_appointment_form ul > li.birs_appointment_time {
+      -webkit-box-ordinal-group: 6;
+      -moz-box-ordinal-group: 6;
+      box-ordinal-group: 6;
+      -webkit-order: 6;
+      -moz-order: 6;
+      order: 6;
+      -ms-flex-order: 6; }
+    #birs_appointment_form ul > li.birs_client_section {
+      -webkit-box-ordinal-group: 7;
+      -moz-box-ordinal-group: 7;
+      box-ordinal-group: 7;
+      -webkit-order: 7;
+      -moz-order: 7;
+      order: 7;
+      -ms-flex-order: 7; }
+    #birs_appointment_form ul > li.birs_client_type {
+      -webkit-box-ordinal-group: 8;
+      -moz-box-ordinal-group: 8;
+      box-ordinal-group: 8;
+      -webkit-order: 8;
+      -moz-order: 8;
+      order: 8;
+      -ms-flex-order: 8; }
+    #birs_appointment_form ul > li.birs_client_title {
+      -webkit-box-ordinal-group: 9;
+      -moz-box-ordinal-group: 9;
+      box-ordinal-group: 9;
+      -webkit-order: 9;
+      -moz-order: 9;
+      order: 9;
+      -ms-flex-order: 9; }
+    #birs_appointment_form ul > li.birs_client_name_first {
+      -webkit-box-ordinal-group: 10;
+      -moz-box-ordinal-group: 10;
+      box-ordinal-group: 10;
+      -webkit-order: 10;
+      -moz-order: 10;
+      order: 10;
+      -ms-flex-order: 10; }
+    #birs_appointment_form ul > li.birs_client_name_last {
+      -webkit-box-ordinal-group: 11;
+      -moz-box-ordinal-group: 11;
+      box-ordinal-group: 11;
+      -webkit-order: 11;
+      -moz-order: 11;
+      order: 11;
+      -ms-flex-order: 11; }
+    #birs_appointment_form ul > li.birs_appointment_notes {
+      -webkit-box-ordinal-group: 12;
+      -moz-box-ordinal-group: 12;
+      box-ordinal-group: 12;
+      -webkit-order: 12;
+      -moz-order: 12;
+      order: 12;
+      -ms-flex-order: 12; }
+    #birs_appointment_form ul > li.birs_client_email {
+      -webkit-box-ordinal-group: 13;
+      -moz-box-ordinal-group: 13;
+      box-ordinal-group: 13;
+      -webkit-order: 13;
+      -moz-order: 13;
+      order: 13;
+      -ms-flex-order: 13; }
+    #birs_appointment_form ul > li.birs_client_phone {
+      -webkit-box-ordinal-group: 14;
+      -moz-box-ordinal-group: 14;
+      box-ordinal-group: 14;
+      -webkit-order: 14;
+      -moz-order: 14;
+      order: 14;
+      -ms-flex-order: 14; }
+    #birs_appointment_form ul > li.birs_footer {
+      -webkit-box-ordinal-group: 15;
+      -moz-box-ordinal-group: 15;
+      box-ordinal-group: 15;
+      -webkit-order: 15;
+      -moz-order: 15;
+      order: 15;
+      -ms-flex-order: 15; }
